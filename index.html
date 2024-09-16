@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Manager</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        button {
+            padding: 5px 10px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Employee Manager</h1>
+    <form id="employeeForm">
+        <label for="name">Name: </label>
+        <input type="text" id="name" required>
+  
+        <label for="email">Email: </label>
+        <input type="email" id="email" required>
+
+        <label for="phone">Phone: </label>
+        <input type="text" id="phone" required>
+
+        <label for="address">Address: </label>
+        <input type="text" id="address" required>
+
+        <label for="position">Position: </label>
+        <input type="text" id="position" required>
+
+        <label for="salary">Salary: </label>
+        <input type="text" id="salary" required>
+
+        <button type="submit">Add Employee</button>
+    </form>
+
+    <h3>Employee List</h3>
+    <table id="employeeTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>Position</th>
+                <th>Salary</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Render body here -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
